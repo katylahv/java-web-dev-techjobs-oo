@@ -6,13 +6,11 @@ public class Job {
 
     private int id;
     private static int nextId = 1;
-
     private String name;
     private Employer employer;
     private Location location;
     private PositionType positionType;
     private CoreCompetency coreCompetency;
-
 
     public Job(){
         id = nextId;

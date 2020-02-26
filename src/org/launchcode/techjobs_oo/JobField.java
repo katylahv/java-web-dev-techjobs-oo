@@ -15,9 +15,9 @@ public abstract class JobField {
     @Override
     public String toString() {
         if (value != "") {
-            return   "__"+value+"__\n";
+            return " " + value+"\n";
         } else {
-            return "  Data not available\n";
+            return " Data not available\n";
         }
     }
     @Override

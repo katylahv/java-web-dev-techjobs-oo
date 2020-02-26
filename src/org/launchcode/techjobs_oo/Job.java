@@ -47,8 +47,8 @@ public class Job {
     public String toString() {
         if (name != null) {
             return
-                    "ID:  __" + id + "__\n" +
-                            "Name:  __" + name + "__\n" +
+                            "ID: " + id + "\n" +
+                            "Name: " + name + "\n" +
                             "Employer:" + employer +
                             "Location:" + location +
                             "Position Type:" + positionType +

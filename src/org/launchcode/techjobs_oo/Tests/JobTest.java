@@ -43,17 +43,17 @@ public class JobTest {
     }
     @Test
     public void testJobToStringReturnsLine(){
-        assertEquals("__" + test_job.getId() + "__", test_job.toString().substring(5,11).trim());
+        assertEquals("ID: " + test_job.getId() + "\nName: "+ test_job.getName(), test_job.toString().substring(0,20).trim());
     }
     @Test
     public void testJobToStringReturnsLabel(){
-        assertEquals("ID:  __" + test_job.getId() + "__", test_job.toString().substring(0,11).trim());
+        assertEquals("ID: 1", test_job.toString().substring(0,5).trim());
     }
     @Test
     public void testJobReturnsMessageIfNoData(){
         Job test_job_three = new Job("Product tester", new Employer(""), new Location("Desert"),
                 new PositionType("Quality control"), new CoreCompetency("Persistence"));
-        assertEquals("Employer:  Data not available", test_job_three.toString().substring(37,67).trim());
+        assertEquals("Employer: Data not available", test_job_three.toString().substring(27,56).trim());
     }
 
     @Test

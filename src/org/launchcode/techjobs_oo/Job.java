@@ -1,5 +1,6 @@
 package org.launchcode.techjobs_oo;
 
+import java.util.ArrayList;
 import java.util.Objects;
 
 public class Job {
@@ -40,6 +41,21 @@ public class Job {
     @Override
     public int hashCode() {
         return Objects.hash(getId());
+    }
+
+    @Override
+    public String toString() {
+        if (name != null) {
+            return
+                    "ID:  __" + id + "__\n" +
+                            "Name:  __" + name + "__\n" +
+                            "Employer:" + employer +
+                            "Location:" + location +
+                            "Position Type:" + positionType +
+                            "Core Competency:" + coreCompetency;
+        } else {
+            return "OOPS! This job does not seem to exist.";
+        }
     }
 
     public String getName() {

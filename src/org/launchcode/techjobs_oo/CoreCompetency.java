@@ -21,7 +21,11 @@ public class CoreCompetency {
 
     @Override
     public String toString() {
-        return value;
+        if (value != "") {
+            return   "__"+value+"__\n";
+        } else {
+            return "  Data not available\n";
+        }
     }
 
     @Override

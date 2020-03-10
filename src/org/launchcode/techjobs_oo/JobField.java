@@ -28,6 +28,13 @@ public abstract class JobField {
         this();
         this.value = value;
     }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof JobField)) return false;
+        JobField jobField = (JobField) o;
+        return getId() == jobField.getId();
+    }
 
     public int getId() {
         return id;
